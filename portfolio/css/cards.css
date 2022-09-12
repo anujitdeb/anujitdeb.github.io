@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+}
+
+.card {
+  margin: 1rem;
+  width: 300px;
+  font-family: 'Nunito', sans-serif;
+  max-height: 550px;
+  padding: 0.5rem 1rem;
+  background-color: #30313e;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.card h4{
+    padding-top: 30px;
+}
+
+.card-featured {
+    border: 2px solid #40cdb37a;
+}
+
+body.light .card {
+    background-color: #fff;
+}
+.lang .badge{
+    background-color: transparent;
+    border: 1.5px solid #40cdb2;
+    color: #40cdb2;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.color-gradient-green-bg .lang .badge{
+  background-color: #40cdb2;
+  color:#fff;
+}
+.lang .badge:hover{
+    background-color: #40cdb2;
+    color: #fff;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card .title {
+  color: white;
+  margin: 1rem;
+  font-family: 'Nunito', sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card .title--legendary {
+  background-color: #f4d03f;
+}
+.card .title--legendary:hover {
+  box-shadow: 0 0 12px rgba(244, 208, 63, 0.8);
+}
+.card .title--epic {
+  background-color: #40cdb2;
+}
+.card .title--epic:hover {
+  box-shadow: 0 0 12px rgba(20, 252, 182, 0.8);
+}
+.card .title--common {
+  background-color: #2ecc71;
+}
+.card .title--common:hover {
+  box-shadow: 0 0 12px #40cdb39a;
+}
+.card .desc {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+.card .actions {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card .actions button {
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  outline: 0;
+  transition: background-color 0.4s, color 0.4s, transform 0.1s;
+}
+.card .actions button:hover {
+  color: white;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+}
+.card .actions button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+.card .actions__like:hover {
+  background-color: #00b16a;
+}
+.card .actions__trade:hover {
+  background-color: #3498db;
+}
+.card .actions__cancel:hover {
+  background-color: #c0392b;
+}
+
+/* p {
+  margin-top: 1rem;
+  color: #484848;
+} */
+
+/* a:link,
+a:visited {
+  text-decoration: none;
+  color: #2574a9;
+}
+
+.active {
+  background-color: #00b16a;
+} */
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.card svg {
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
